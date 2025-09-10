@@ -1,0 +1,18 @@
+---------------- INFO ----------------
+
+         Loading Model ...
+ Model IR/FP16/mobilenet_v1.xml loaded
+ Preparing image ...
+
+ Starting inference ...
+
+
+ Inference results: 
+[[('n02488291', 'langur', 0.87486374), ('n02486261', 'patas', 0.04252754), ('n02483362', 'gibbon', 0.02925915), ('n02493509', 'titi', 0.022132289), ('n02484975', 'guenon', 0.006307599)]]
+
+
+time spent: 0.045287383999999875
+
+
+================= END =================
+         END of function

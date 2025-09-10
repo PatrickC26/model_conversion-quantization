@@ -1,0 +1,18 @@
+---------------- INFO ----------------
+
+         Loading Model ...
+ Model IR/INT8/mobilenet_v3_Small.xml loaded
+ Preparing image ...
+
+ Starting inference ...
+
+
+ Inference results: 
+[[('n03065424', 'coil', 0.05061682), ('n03160309', 'dam', 0.03413361), ('n03930313', 'picket_fence', 0.023758085), ('n02782093', 'balloon', 0.022037197), ('n03028079', 'church', 0.021033406)]]
+
+
+time spent: 0.011806787000000377
+
+
+================= END =================
+         END of function

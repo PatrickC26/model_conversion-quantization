@@ -1,0 +1,24 @@
+---------------- INFO ----------------
+
+     MobileNet_v2 model loaded
+ Making an inference from the origional model...
+1/1 ━━━━━━━━━━━━━━━━━━━━ 1s 1s/step
+		RESULT
+time spent:         1.734373724
+ [[('n02488291', 'langur', 0.9566753), ('n02493509', 'titi', 0.008851689), ('n02483362', 'gibbon', 0.0052656718), ('n02492035', 'capuchin', 0.004006653), ('n02490219', 'marmoset', 0.003389957)]] 
+
+
+ Starting to convert and quantize         
+ converting tensorflow to onnx ...
+ Saving onnx ...
+ Saving ov IR fp 32...
+ Saving ov IR fp16 ...
+ Quantizing with nncf tool ...
+Statistics collection ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 300/300 • 0:00:08 • 0:00:00
+Applying Fast Bias correction ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 43/43 • 0:00:00 • 0:00:00
+ Saving ov IR int8 ...
+Model all saved !!
+
+ 
+================= END =================
+ END of function

@@ -1,0 +1,18 @@
+---------------- INFO ----------------
+
+         Loading Model ...
+ Model IR/INT8/mobilenet_v3_Large.xml loaded
+ Preparing image ...
+
+ Starting inference ...
+
+
+ Inference results: 
+[[('n02102480', 'Sussex_spaniel', 0.19626561), ('n02481823', 'chimpanzee', 0.046520308), ('n02480495', 'orangutan', 0.045450423), ('n02480855', 'gorilla', 0.036044847), ('n02100877', 'Irish_setter', 0.019004999)]]
+
+
+time spent: 0.02270480500000061
+
+
+================= END =================
+         END of function
