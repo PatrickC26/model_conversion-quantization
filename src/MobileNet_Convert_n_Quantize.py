@@ -8,11 +8,9 @@
 # from the author is prohibited.
 #
 # Disclaimer:
-# The software is provided "AS IS", without warranty of any kind, express or 
-# implied, including but not limited to the warranties of merchantability, 
-# fitness for a particular purpose, and noninfringement. In no event shall the 
-# author be liable for any claim, damages, or other liability arising from the 
-# use of this software.
+# This code is for educational use only. If you believe it infringes on
+# any copyright or license, please notify the author for correction.
+
 # ---------------------------------------------------------------------
 
 
@@ -49,15 +47,6 @@ def prepare_image(file):
 def createDir(path: str):
     if not os.path.exists(path):
         os.makedirs(path)
-
-
-# create required folder to save the image or model
-createDir(ROOT + "keras")
-createDir(ROOT + "onnx")
-createDir(ROOT + "IR/FP32")
-createDir(ROOT + "IR/FP16")
-createDir(ROOT + "IR/INT8")
-createDir(ROOT + "validation")
 
 
 # list out the photo in the folder

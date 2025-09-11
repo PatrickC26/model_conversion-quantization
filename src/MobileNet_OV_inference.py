@@ -8,11 +8,8 @@
 # from the author is prohibited.
 #
 # Disclaimer:
-# The software is provided "AS IS", without warranty of any kind, express or 
-# implied, including but not limited to the warranties of merchantability, 
-# fitness for a particular purpose, and noninfringement. In no event shall the 
-# author be liable for any claim, damages, or other liability arising from the 
-# use of this software.
+# This code is for educational use only. If you believe it infringes on
+# any copyright or license, please notify the author for correction.
 # ---------------------------------------------------------------------
 
 class TextColor:
