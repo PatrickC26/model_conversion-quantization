@@ -46,8 +46,11 @@ def createDir(path: str):
     if not os.path.exists(path):
         os.makedirs(path)
 
-createDir("models")
-
+createDir("models/keras")
+createDir("models/onnx")
+createDir("models/IR/FP32")
+createDir("models/IR/FP16")
+createDir("models/IR/INT8")
 
 
 import tensorflow as tf
@@ -76,10 +79,10 @@ from tensorflow.keras.applications import imagenet_utils
 from time import process_time
 
 # check if photo is in the dataset folder
-photo_ls = os.listdir("/dataset/")
+photo_ls = os.listdir("dataset/")
 photo_ext = ('.png', '.jpeg', '.jpg')
 photo_ls = [f for f in photo_ls if f.lower().endswith(photo_ext)]
-preprocessed_image = prepare_image("/dataset/" + photo_ls[0])
+preprocessed_image = prepare_image("dataset/" + photo_ls[0])
 if len(photo_ls) == 0:
     print(f"{TextColor.RED}\n\n---------------- ERROR ----------------\n\n \
             ERROR no image in the folder.\n Please insert one and restart the program \
