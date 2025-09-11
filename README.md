@@ -1,7 +1,7 @@
 # model_conversion-quantization
 
 
-This repository contains **model conversion & quantization** developed for ML model optimization on embedded and edge devices. 
+This repository contains **model conversion & quantization** developed for ML model optimization on embedded and edge devices.  
 An easy benchmark is also given in this tutorial.  
 Originally inspired by an internship project at Advantech, this app has been reworked for **educational and research purposes** only.  
 
@@ -18,8 +18,11 @@ Originally inspired by an internship project at Advantech, this app has been rew
 ```
 model_conversion-quantization/
 ├── dataset
-│   ├── ILSVRC2010_val_00014170.JPEG # This is a sample image
-│   └── validation # user should add validation classes in the folder 
+│   ├── ILSVRC2010_val_00014170.JPEG
+│   └── validation
+│       ├── n02134084
+│       │   └── n02134084_8995.JPEG
+│       └── README.md
 ├── MobileNet_Convert_n_Quantize.py
 ├── MobileNet_OV_inference.py
 ├── notebook
@@ -80,8 +83,7 @@ model_conversion-quantization/
         ├── mobilenet_v3_Large.onnx
         └── mobilenet_v3_Small.onnx
 
-13 directories, 49 files
-
+14 directories, 51 files
 
 ````
 
@@ -126,7 +128,7 @@ python3 MobileNet_OV_inference.py --model models/IR/INT8/mobilenet_v1.xml --inpu
 * 🔒 This repository is for **educational and research use only**.
 * 🚫 No proprietary Advantech data is included.
 * 🛠️ Contributions welcome (see Issues/PRs).
-* 🌄 User should add their own image 
+* 🌄 User should add their own image. 
 Example URL: [`Images download`](https://www.image-net.org/challenges/LSVRC/2010/2010-downloads.php#images)
 
 ---
@@ -136,6 +138,7 @@ Example URL: [`Images download`](https://www.image-net.org/challenges/LSVRC/2010
 This project is licensed under an **Educational Use License**.
 Unauthorized commercial use is prohibited.
 
+---
 
 ## ⚠️ Disclaimer
 This project is provided for **educational and research purposes only**.  
