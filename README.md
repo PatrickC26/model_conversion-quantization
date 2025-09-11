@@ -18,6 +18,68 @@ Originally inspired by an internship project at Advantech, this app has been rew
 ```
 
 model_conversion-quantization/
+├── dataset
+|   └── 
+├── models
+│   ├── IR
+│   │   ├── FP16
+│   │   │   ├── mobilenet_v1.bin
+│   │   │   ├── mobilenet_v1.xml
+│   │   │   ├── mobilenet_v2.bin
+│   │   │   ├── mobilenet_v2.xml
+│   │   │   ├── mobilenet_v3_Large.bin
+│   │   │   ├── mobilenet_v3_Large.xml
+│   │   │   ├── mobilenet_v3_Small.bin
+│   │   │   └── mobilenet_v3_Small.xml
+│   │   ├── FP32
+│   │   │   ├── mobilenet_v1.bin
+│   │   │   ├── mobilenet_v1.xml
+│   │   │   ├── mobilenet_v2.bin
+│   │   │   ├── mobilenet_v2.xml
+│   │   │   ├── mobilenet_v3_Large.bin
+│   │   │   ├── mobilenet_v3_Large.xml
+│   │   │   ├── mobilenet_v3_Small.bin
+│   │   │   └── mobilenet_v3_Small.xml
+│   │   └── INT8
+│   │       ├── mobilenet_v1.bin
+│   │       ├── mobilenet_v1.xml
+│   │       ├── mobilenet_v2.bin
+│   │       ├── mobilenet_v2.xml
+│   │       ├── mobilenet_v3_Large.bin
+│   │       ├── mobilenet_v3_Large.xml
+│   │       ├── mobilenet_v3_Small.bin
+│   │       └── mobilenet_v3_Small.xml
+│   ├── keras
+│   │   ├── mobilenet_v1.weights.h5
+│   │   ├── mobilenet_v2.weights.h5
+│   │   ├── mobilenet_v3_Large.weights.h5
+│   │   └── mobilenet_v3_Small.weights.h5
+│   └── onnx
+│       ├── mobilenet_v1.onnx
+│       ├── mobilenet_v2.onnx
+│       ├── mobilenet_v3_Large.onnx
+│       └── mobilenet_v3_Small.onnx
+├── notebook
+│   ├── Convert and Quantize
+│   │   ├── MobileNet_1.txt
+│   │   ├── MobileNet_v2.txt
+│   │   ├── MobileNet_v3_Large.txt
+│   │   └── MobileNet_v3_Small.txt
+│   ├── inference
+│   │   ├── INT8
+│   │   │   ├── MobileNet_v1.txt
+│   │   │   ├── MobileNet_v2.txt
+│   │   │   ├── MobileNet_v3_Large.txt
+│   │   │   └── MobileNet_v3_Small.txt
+│   │   ├── MobileNet_v1_FP16.txt
+│   │   └── MobileNet_v1_FP32.txt
+│   └── pip_installation.txt
+├── README.md
+├── requirements.txt
+├── result_mobileNet.jpg
+└── src
+    ├── MobileNet_Convert_n_Quantize.py
+    └── MobileNet_OV_inference.py
 
 
 ````

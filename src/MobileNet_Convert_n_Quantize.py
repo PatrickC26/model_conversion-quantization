@@ -26,9 +26,9 @@ import numpy as np
 ROOT = "./" # Locate a location for the main folder
 
 modelVersion = "v1"
-modelVersion = "v2"
-modelVersion = "v3_Large"
-modelVersion = "v3_Small"
+# modelVersion = "v2"
+# modelVersion = "v3_Large"
+# modelVersion = "v3_Small"
 
 # [preprocess] Make the image to required pattern
 from keras.preprocessing import image
