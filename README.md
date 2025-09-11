@@ -109,12 +109,13 @@ python3 MobileNet_Convert_n_Quantize.py
 Run a benchmark on a given model:
 
 - For sample model inference
-```bash
+
+```
 python3 MobileNet_OV_inference.py --model sample_models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
 ```
 
 - If you have own models 
-``` bash
+``` 
 python3 MobileNet_OV_inference.py --model models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
 ```
 
@@ -125,6 +126,8 @@ python3 MobileNet_OV_inference.py --model models/IR/INT8/mobilenet_v1.xml --inpu
 * 🔒 This repository is for **educational and research use only**.
 * 🚫 No proprietary Advantech data is included.
 * 🛠️ Contributions welcome (see Issues/PRs).
+* 🌄 User should add their own image 
+Example URL: [`Images download`](https://www.image-net.org/challenges/LSVRC/2010/2010-downloads.php#images)
 
 ---
 
