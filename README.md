@@ -12,6 +12,68 @@ Originally inspired by an internship project at Advantech, this app has been rew
 - ⚡ **Performance metrics**: latency
 - 📦 Easy-to-use CLI for running benchmarks
 
+
+---
+
+## ⚙️ Installation
+Clone the repo and install dependencies:
+```bash
+git clone https://github.com/PatrickC26/model_conversion-quantization.git
+cd model_conversion-quantization
+pip install -r requirements.txt
+````
+
+---
+
+## ▶️ Usage
+
+Convert and quantize a model:
+Noted that the model type should be changed in the py file 
+
+```bash
+python3 MobileNet_Convert_n_Quantize.py
+```
+
+Run a benchmark on a given model:
+
+- For sample model inference
+
+```
+python3 MobileNet_OV_inference.py --model sample_models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
+```
+
+- If you have own models 
+``` 
+python3 MobileNet_OV_inference.py --model models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
+```
+
+---
+
+## 📌 Notes
+
+* 🔒 This repository is for **educational and research use only**.
+* 🚫 No proprietary Advantech data is included.
+* 🛠️ Contributions welcome (see Issues/PRs).
+* 🌄 User should add their own image. 
+Example URL: [`Images download`](https://www.image-net.org/challenges/LSVRC/2010/2010-downloads.php#images)
+
+---
+
+## 📄 License
+
+This project is licensed under an **Educational Use License**.
+Unauthorized commercial use is prohibited.
+
+---
+
+## ⚠️ Disclaimer
+This project is provided for **educational and research purposes only**.  
+It does not contain or intend to distribute any proprietary information from Advantech or other organizations.  
+
+If you believe that any part of this repository violates copyright, licensing terms, or other rights,  
+please open an issue or contact me, and I will address it promptly.
+
+
 ---
 
 ## 📂 Repository Structure
@@ -86,64 +148,3 @@ model_conversion-quantization/
 14 directories, 51 files
 
 ````
-
----
-
-## ⚙️ Installation
-Clone the repo and install dependencies:
-```bash
-git clone https://github.com/PatrickC26/model_conversion-quantization.git
-cd model_conversion-quantization
-pip install -r requirements.txt
-````
-
----
-
-## ▶️ Usage
-
-Convert and quantize a model:
-Noted that the model type should be changed in the py file 
-
-```bash
-python3 MobileNet_Convert_n_Quantize.py
-```
-
-Run a benchmark on a given model:
-
-- For sample model inference
-
-```
-python3 MobileNet_OV_inference.py --model sample_models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
-```
-
-- If you have own models 
-``` 
-python3 MobileNet_OV_inference.py --model models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
-```
-
----
-
-## 📌 Notes
-
-* 🔒 This repository is for **educational and research use only**.
-* 🚫 No proprietary Advantech data is included.
-* 🛠️ Contributions welcome (see Issues/PRs).
-* 🌄 User should add their own image. 
-Example URL: [`Images download`](https://www.image-net.org/challenges/LSVRC/2010/2010-downloads.php#images)
-
----
-
-## 📄 License
-
-This project is licensed under an **Educational Use License**.
-Unauthorized commercial use is prohibited.
-
----
-
-## ⚠️ Disclaimer
-This project is provided for **educational and research purposes only**.  
-It does not contain or intend to distribute any proprietary information from Advantech or other organizations.  
-
-If you believe that any part of this repository violates copyright, licensing terms, or other rights,  
-please open an issue or contact me, and I will address it promptly.
-
