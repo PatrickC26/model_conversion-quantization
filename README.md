@@ -98,28 +98,22 @@ pip install -r requirements.txt
 
 ## ▶️ Usage
 
-Conver and quantize a model:
+Convert and quantize a model:
 Noted that the model type should be changed in the py file 
 
 ```bash
-python3 src/MobileNet_Convert_n_Quantize.py
+python3 MobileNet_Convert_n_Quantize.py
 ```
 
 Run a benchmark on a given model:
 
 ```bash
-python3 src/MobileNet_OV_inference.py --model models/resnet50.onnx --precision INT8
+# For sample model inference
+python3 MobileNet_OV_inference.py --model sample_models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
+
+# If you have own models 
+python3 MobileNet_OV_inference.py --model models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
 ```
-
----
-
-## 📖 Documentation
-
-See [`/docs`](./docs) for:
-
-* Benchmarking methodology
-* Analysis notebooks
-* Example plots
 
 ---
 
