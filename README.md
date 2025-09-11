@@ -16,49 +16,12 @@ Originally inspired by an internship project at Advantech, this app has been rew
 
 ## 📂 Repository Structure
 ```
-
 model_conversion-quantization/
 ├── dataset
-|   └── 
-├── models
-│   ├── IR
-│   │   ├── FP16
-│   │   │   ├── mobilenet_v1.bin
-│   │   │   ├── mobilenet_v1.xml
-│   │   │   ├── mobilenet_v2.bin
-│   │   │   ├── mobilenet_v2.xml
-│   │   │   ├── mobilenet_v3_Large.bin
-│   │   │   ├── mobilenet_v3_Large.xml
-│   │   │   ├── mobilenet_v3_Small.bin
-│   │   │   └── mobilenet_v3_Small.xml
-│   │   ├── FP32
-│   │   │   ├── mobilenet_v1.bin
-│   │   │   ├── mobilenet_v1.xml
-│   │   │   ├── mobilenet_v2.bin
-│   │   │   ├── mobilenet_v2.xml
-│   │   │   ├── mobilenet_v3_Large.bin
-│   │   │   ├── mobilenet_v3_Large.xml
-│   │   │   ├── mobilenet_v3_Small.bin
-│   │   │   └── mobilenet_v3_Small.xml
-│   │   └── INT8
-│   │       ├── mobilenet_v1.bin
-│   │       ├── mobilenet_v1.xml
-│   │       ├── mobilenet_v2.bin
-│   │       ├── mobilenet_v2.xml
-│   │       ├── mobilenet_v3_Large.bin
-│   │       ├── mobilenet_v3_Large.xml
-│   │       ├── mobilenet_v3_Small.bin
-│   │       └── mobilenet_v3_Small.xml
-│   ├── keras
-│   │   ├── mobilenet_v1.weights.h5
-│   │   ├── mobilenet_v2.weights.h5
-│   │   ├── mobilenet_v3_Large.weights.h5
-│   │   └── mobilenet_v3_Small.weights.h5
-│   └── onnx
-│       ├── mobilenet_v1.onnx
-│       ├── mobilenet_v2.onnx
-│       ├── mobilenet_v3_Large.onnx
-│       └── mobilenet_v3_Small.onnx
+│   ├── ILSVRC2010_val_00014170.JPEG # This is a sample image
+│   └── validation # user should add validation classes in the folder 
+├── MobileNet_Convert_n_Quantize.py
+├── MobileNet_OV_inference.py
 ├── notebook
 │   ├── Convert and Quantize
 │   │   ├── MobileNet_1.txt
@@ -77,9 +40,47 @@ model_conversion-quantization/
 ├── README.md
 ├── requirements.txt
 ├── result_mobileNet.jpg
-└── src
-    ├── MobileNet_Convert_n_Quantize.py
-    └── MobileNet_OV_inference.py
+└── sample_models
+    ├── IR
+    │   ├── FP16
+    │   │   ├── mobilenet_v1.bin
+    │   │   ├── mobilenet_v1.xml
+    │   │   ├── mobilenet_v2.bin
+    │   │   ├── mobilenet_v2.xml
+    │   │   ├── mobilenet_v3_Large.bin
+    │   │   ├── mobilenet_v3_Large.xml
+    │   │   ├── mobilenet_v3_Small.bin
+    │   │   └── mobilenet_v3_Small.xml
+    │   ├── FP32
+    │   │   ├── mobilenet_v1.bin
+    │   │   ├── mobilenet_v1.xml
+    │   │   ├── mobilenet_v2.bin
+    │   │   ├── mobilenet_v2.xml
+    │   │   ├── mobilenet_v3_Large.bin
+    │   │   ├── mobilenet_v3_Large.xml
+    │   │   ├── mobilenet_v3_Small.bin
+    │   │   └── mobilenet_v3_Small.xml
+    │   └── INT8
+    │       ├── mobilenet_v1.bin
+    │       ├── mobilenet_v1.xml
+    │       ├── mobilenet_v2.bin
+    │       ├── mobilenet_v2.xml
+    │       ├── mobilenet_v3_Large.bin
+    │       ├── mobilenet_v3_Large.xml
+    │       ├── mobilenet_v3_Small.bin
+    │       └── mobilenet_v3_Small.xml
+    ├── keras
+    │   ├── mobilenet_v1.weights.h5
+    │   ├── mobilenet_v2.weights.h5
+    │   ├── mobilenet_v3_Large.weights.h5
+    │   └── mobilenet_v3_Small.weights.h5
+    └── onnx
+        ├── mobilenet_v1.onnx
+        ├── mobilenet_v2.onnx
+        ├── mobilenet_v3_Large.onnx
+        └── mobilenet_v3_Small.onnx
+
+13 directories, 49 files
 
 
 ````
@@ -107,11 +108,13 @@ python3 MobileNet_Convert_n_Quantize.py
 
 Run a benchmark on a given model:
 
+- For sample model inference
 ```bash
-# For sample model inference
 python3 MobileNet_OV_inference.py --model sample_models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
+```
 
-# If you have own models 
+- If you have own models 
+``` bash
 python3 MobileNet_OV_inference.py --model models/IR/INT8/mobilenet_v1.xml --input dataset/ILSVRC2010_val_00014170.JPEG
 ```
 
